@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 型態選擇器（標籤） */
+        span{
+            color: red;
+        }
+        /* Class選擇器（使用.符號） */
+        .one{
+            color: red;
+        }
+        .two{
+            font-size: 30px;
+        }
+        /* ID選擇器（使用#符號） */
+        #one{
+            color: green;
+        }
+        /* 通用選擇器（使用*符號） */
+        *{
+            font-family: "標楷體";
+        }
+        /* 屬性選擇器 */
+        input[type="button"]{
+            background-color: green ;
+        }
+        /* 後代選擇器（使用空格符號） */
+        .div1 a{
+            color: red;
+        }
+        /* 子選擇器（使用>符號） */
+        .div2>a{
+            color:red;
+        }
+        /* 同層相鄰選擇器（使用+符號）、同層全體選擇器（使用~符號） */
+        /* u1+p{
+            color: green;
+        } */
+        ul~p{
+            color: yellow;
+        }
+        /* 偽類選擇器（使用:符號） */
+        #a1:hover{
+            color: green;
+        }
+        /* 偽類選擇器（使用::符號） */
+        #div2::after{
+            content: red;
+            font-size:   30px;
+        }
+        </style>
+</head>
+<body>
+    <h2>型態選擇器（標籤）</h2>
+    <span>型態選擇器</span>
+    <span>型態二</span>
+    <hr>
+    <h2>Class選擇器(使用.符號）</h2>
+    <a href="#" class="one two">Class選擇器</a>
+    <hr>
+    <h2>ID選擇器（使用#符號）</h2>
+    <a href="#" id="one" class="two">ID選擇器</a>
+    <hr>
+    <hr>
+    <h2>ID選擇器（使用#符號）</h2>
+    <a href="#" id="one" class="two">ID選擇器</a>
+    <hr>
+    <h2>屬性選擇器</h2>
+    <input type="button" value="屬性選擇器">
+    <hr>
+    <h2>後代選擇器（使用空格符號）</h2>
+    <div class="div1">
+        <a href="#">div->p->a</a>
+    </div>
+    <hr>
+    <h2>子選擇器（使用>符號）</h2>
+    <div class="div2">
+        <p>
+            <a href="#"><div->p->a</a>
+        </p>
+    </div>    
+     <div class="div2">
+        <a href="#">div->a</a>
+     </div>
+     <div class="div2">
+        <a href="#">div->a</a>
+     </div>   
+     <hr>
+     <h2>同層相鄰選擇器（使用+符號）、同層全體選擇器（使用~符號）</h2>  
+     <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <ul>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <p>p4</p>
+    <p>p5</p>
+    <p>p6</p>
+    <hr>
+    <h2>偽類選擇器（使用::符號）</h2>
+    <div id="div2">偽類選擇器</div>
+    <hr>
+    <h2>群組選擇器（使用,符號）</h2>
+    <div id="div3">div3</div>
+    <div id="div4">div4</div>
+</body>
+</html>
